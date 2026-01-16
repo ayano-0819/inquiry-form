@@ -1,0 +1,103 @@
+/* =========================
+    Confirm 全体
+========================= */
+.confirm {
+    padding: 40px 0 60px;
+}
+
+.confirm__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* =========================
+    タイトル
+========================= */
+.confirm__title {
+    font-family: "Tinos", serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #8b7c6d;
+    text-align: center;
+    margin: 30px 0 40px;
+}
+
+/* =========================
+    確認テーブル
+========================= */
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.confirm-table th,
+.confirm-table td {
+    border: 1px solid #e5e5e5;
+    padding: 18px 20px;
+    font-size: 14px;
+    color: #8b7c6d;
+    vertical-align: top;
+}
+
+/* 左側（項目名） */
+.confirm-table th {
+    width: 30%;
+    background: #b8aa9b;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* 右側（内容） */
+.confirm-table td {
+    background: #ffffff;
+}
+
+/* お問い合わせ内容（高さ確保） */
+.confirm-table__detail {
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+/* =========================
+    ボタンエリア
+========================= */
+.confirm__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 送信ボタン */
+.confirm__button-submit {
+    background: #8b7c6d;
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 修正ボタン */
+.confirm__button-back {
+    background: transparent;
+    color: #8b7c6d;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* =========================
+    hover（おまけ）
+========================= */
+.confirm__button-submit:hover {
+    opacity: 0.8;
+}
+
+.confirm__button-back:hover {
+    opacity: 0.7;
+}

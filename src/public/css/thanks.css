@@ -1,0 +1,61 @@
+/* =========================
+    Thanks 全体
+========================= */
+.thanks {
+    position: relative;
+    height: calc(100vh - 80px);
+    /* header分を除外 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__inner {
+    position: relative;
+    text-align: center;
+}
+
+/* =========================
+    背景の Thank you
+========================= */
+.thanks__bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Tinos", serif;
+    font-size: 180px;
+    color: #f5f3f1;
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* =========================
+    メッセージ
+========================= */
+.thanks__message {
+    position: relative;
+    font-size: 16px;
+    color: #8b7c6d;
+    margin-bottom: 24px;
+    z-index: 1;
+}
+
+/* =========================
+    HOMEボタン
+========================= */
+.thanks__button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 32px;
+    background: #8b7c6d;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.thanks__button:hover {
+    opacity: 0.8;
+}

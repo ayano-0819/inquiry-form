@@ -1,0 +1,21 @@
+.header {
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header__logo{
+    text-decoration: none;
+    font-family: "Tinos", serif;
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: #8b7c6d;
+}
