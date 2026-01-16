@@ -2,7 +2,7 @@
     Confirm 全体
 ========================= */
 .confirm {
-    padding: 40px 0 60px;
+    padding-bottom: 40px;
 }
 
 .confirm__inner {
@@ -21,7 +21,7 @@
     letter-spacing: 0.02em;
     color: #8b7c6d;
     text-align: center;
-    margin: 30px 0 40px;
+    margin: 30px 0;
 }
 
 /* =========================
@@ -35,6 +35,7 @@
 
 .confirm-table th,
 .confirm-table td {
+    font-family: "Playfair Display", serif;
     border: 1px solid #e5e5e5;
     padding: 18px 20px;
     font-size: 14px;
@@ -49,17 +50,24 @@
     color: #ffffff;
     font-weight: normal;
     text-align: left;
+    vertical-align: middle;
+    padding-left: 24px;
 }
 
 /* 右側（内容） */
 .confirm-table td {
     background: #ffffff;
+    vertical-align: top;
+    padding-top: 14px;
 }
 
 /* お問い合わせ内容（高さ確保） */
-.confirm-table__detail {
+.confirm-table td .confirm-table__detail {
+    margin: 0;
+    padding: 0;
     line-height: 1.8;
-    white-space: pre-wrap;
+    padding-top: 6px;
+    white-space: pre-line;
 }
 
 /* =========================

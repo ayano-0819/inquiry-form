@@ -36,6 +36,7 @@
 .contact-form__control {
     width: 630px;/* 全体の基準 */
     flex-shrink: 0;
+    text-align: left;
 }
 
 /* エラーは必ず下 */
@@ -88,7 +89,50 @@
 .contact-form select:not(:has(option[value=""]:checked)) {
     color: #000;
     }
-    
+
+/* セレクトの外枠 */
+.contact-form__select-wrap {
+    position: relative;
+    width: 350px;/* 今使ってるselect幅に合わせる */
+    margin: 0; /* 変な中央寄せを潰す */
+    flex-shrink: 0;
+}
+
+/* select本体 */
+.contact-form__select-wrap select {
+    width: 100%;
+    padding-right: 40px;
+    /* ← ▼分の余白 */
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    background: #f5f5f5;
+    border: none;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #8b7c6d;
+}
+
+/* ▼を擬似要素で作る */
+.contact-form__select-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #8b7c6d;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* セレクト */
+.contact-form__control select {
+    width: 630px;/* ← 他の入力欄と同じ */
+}
+
 /* 通常の1カラム入力（メール・住所など） */
 .contact-form__control>input,
 .contact-form__control>select,

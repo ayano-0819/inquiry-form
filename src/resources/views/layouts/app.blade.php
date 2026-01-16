@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    @unless (request()->is('thanks'))
     <header class="header">
         <div class="header__inner">
             <a class="header__logo" href="/">
@@ -23,6 +24,7 @@
             </a>
         </div>
     </header>
+    @endunless
 
     <main>
         @yield('content')

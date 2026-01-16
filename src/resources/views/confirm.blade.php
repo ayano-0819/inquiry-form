@@ -3,6 +3,9 @@
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/common.css') }}">
 <link rel="stylesheet" href="{{ asset('css/confirm.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -19,15 +22,15 @@
             <table class="confirm-table">
                 <tr>
                     <th>お名前</th>
-                    <td>{{ $contact['last_name'] }} {{ $contact['first_name'] }}</td>
+                    <td>{{ $contact['last_name'] }}　{{ $contact['first_name'] }}</td>
                 </tr>
 
                 <tr>
                     <th>性別</th>
                     <td>
-                        @if ($contact['gender'] === 'male')
+                        @if ($contact['gender'] == '1')
                             男性
-                        @elseif ($contact['gender'] === 'female')
+                        @elseif ($contact['gender'] == '2')
                             女性
                         @else
                             その他
@@ -42,7 +45,7 @@
 
                 <tr>
                     <th>電話番号</th>
-                    <td>{{ $contact['tel'] }}</td>
+                    <td>{{ str_replace('-', '', $contact['tel']) }}</td>
                 </tr>
 
                 <tr>
@@ -63,7 +66,7 @@
                 <tr>
                     <th>お問い合わせ内容</th>
                     <td class="confirm-table__detail">
-                        {{ $contact['detail'] }}
+                        {{ trim($contact['detail']) }}
                     </td>
                 </tr>
             </table>
@@ -76,11 +79,11 @@
             <!-- ボタン -->
             <div class="confirm__buttons">
                 <button type="submit" class="confirm__button-submit">送信</button>
-                <button type="submit" name="back" value="back" class="confirm__button-back">
+
+                <button type="submit" name="back" value="back" formaction="/confirm" formmethod="post" class="confirm__button-back">
                     修正
                 </button>
             </div>
-
         </form>
     </div>
 </div>

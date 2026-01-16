@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('/', [InquiryController::class, 'index'])->name('contact.index');
 Route::post('/confirm', [InquiryController::class, 'confirm']);
 Route::post('/contacts', [InquiryController::class, 'store']);
+Route::get('/thanks', [InquiryController::class, 'thanks']);

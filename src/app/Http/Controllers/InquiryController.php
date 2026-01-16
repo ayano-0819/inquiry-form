@@ -16,6 +16,12 @@ class InquiryController extends Controller
 
     public function confirm(InquiryRequest $request)
     {
+    
+     // 「修正」ボタンが押された場合：入力画面へ戻す（入力保持）
+    if ($request->has('back')) {
+        return redirect()->route('contact.index')->withInput();
+    }
+
     $contact = $request->only([
         'last_name',
         'first_name',
@@ -53,6 +59,11 @@ class InquiryController extends Controller
         'detail'
     ]);
         Contact::create($contact);
+        return redirect('/thanks');
+    }
+
+    public function thanks()
+    {
         return view('thanks');
     }
 }

@@ -131,14 +131,15 @@
     <!-- お問い合わせの種類 -->
                 <div class="contact-form__group">
                     <label class="contact-form__label">
-                        お問い合わせの種類 <span class="contact-form__required">※</span>
+                    お問い合わせの種類 <span class="contact-form__required">※</span>
                     </label>
 
                     <div class="contact-form__control">
-                        <select name="categry_id" class="contact-form__select">
-                            <option value="" disabled {{ old('categry_id') ? '' : 'selected' }}>
-                                選択してください
-                            </option>
+                        <div class="contact-form__select-wrap">
+                            <select name="categry_id" class="contact-form__select">
+                                <option value="" disabled {{ old('categry_id') ? '' : 'selected' }}>
+                                    選択してください
+                                </option>
 
                             @foreach ($categories as $category)
                                 <option value="{{ $category->id }}"
@@ -146,7 +147,8 @@
                                     {{ $category->content }}
                                 </option>
                             @endforeach
-                        </select>
+                            </select>
+                        </div>
 
                         <div class="contact-form__error">
                             @error('categry_id')
@@ -154,7 +156,7 @@
                             @enderror
                         </div>
                     </div>
-                </div>   
+                </div>
 
     <!-- お問い合わせ内容 -->
                 <div class="contact-form__group">
