@@ -9,13 +9,13 @@
 @endsection
 
 @section('content')
-<div class="confirm">
-    <div class="confirm__inner">
+    <div class="confirm">
+        <div class="confirm__inner">
 
-        <!-- タイトル -->
+    {{-- タイトル --}}
         <h1 class="confirm__title">Confirm</h1>
 
-        <!-- 確認テーブル -->
+    {{-- 確認テーブル --}}
         <form class="contact-form" action="/contacts" method="post">
             @csrf
 
@@ -71,12 +71,11 @@
                 </tr>
             </table>
 
-            <!-- hidden（送信用） -->
             @foreach ($contact as $key => $value)
                 <input type="hidden" name="{{ $key }}" value="{{ $value }}">
             @endforeach
 
-            <!-- ボタン -->
+        {{-- ボタン --}}
             <div class="confirm__buttons">
                 <button type="submit" class="confirm__button-submit">送信</button>
 

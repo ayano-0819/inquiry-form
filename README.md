@@ -12,7 +12,7 @@ git clone git@git@github.com:ayano-0819/inquiry-form.git
 ### 2. プロジェクトに移動
 
 ```
-cd todo
+cd inquiry-form
 ```
 ### 3. Dockerコンテナをビルド
 

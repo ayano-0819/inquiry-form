@@ -8,15 +8,15 @@
 <div class="thanks">
     <div class="thanks__inner">
 
-        <!-- 背景文字 -->
+    {{-- 背景文字 --}}
         <p class="thanks__bg-text">Thank you</p>
 
-        <!-- メッセージ -->
+    {{-- メッセージ --}}
         <p class="thanks__message">
             お問い合わせありがとうございました
         </p>
 
-        <!-- HOMEボタン -->
+    {{-- HOMEボタン --}}
         <a href="{{ route('contact.index') }}" class="thanks__button">
             HOME
         </a>

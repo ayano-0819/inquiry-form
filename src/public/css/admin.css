@@ -1,8 +1,7 @@
-/* adminページだけ：ヘッダー内を基準にする */
 .header__inner {
     position: relative;
 }
-/* 全体 */
+
 .admin {
     max-width: 1250px;
     margin: 0 auto;
@@ -10,12 +9,11 @@
     font-family: "Playfair Display", serif;
 }
 
-/* 右上 logout */
 .admin__logout {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap; /* 狭い画面で縦にならない */
+    white-space: nowrap;
 
     padding: 4px 30px;
     font-size: 14px;
@@ -44,7 +42,6 @@
     justify-content: flex-end;
 }
 
-/* タイトル */
 .admin__title {
     text-align: center;
     font-family: "Tinos", serif;
@@ -55,18 +52,17 @@
         margin: 30px 0;
 }
 
-/* 検索フォーム */
 .admin__search {
     width: 100%;
     display: grid;
     grid-template-columns:
-        320px /* キーワード */
-        120px /* 性別 */
-        240px /* お問い合わせ種類 */
-        160px /* 日付 */
-        1fr /* 余白（右端寄せ用） */
-        110px /* 検索 */
-        110px; /* リセット */
+        320px
+        120px
+        240px
+        160px
+        1fr
+        110px
+        110px;
     gap: 38px;
     align-items: center;
     margin-bottom: 12px;
@@ -81,7 +77,6 @@
     color: #8b7c6d;
 }
 
-/* 性別（いちばん狭く） */
 .admin__select--gender {
     height: 36px;
     padding: 0 28px 0 12px;
@@ -93,7 +88,6 @@
     width: 100%;
 }
 
-/* お問い合わせの種類（やや広め） */
 .admin__select--category {
     height: 36px;
     padding: 0 28px 0 12px;
@@ -110,7 +104,6 @@
     width: 100%;
 }
 
-/* ▼っぽい見た目 */
 .admin__select-wrap::after {
     content: "▼";
     position: absolute;
@@ -132,7 +125,6 @@
     width: 100%;
 }
 
-/* ボタン */
 .admin__btn {
     width: 110px;
     height: 36px;
@@ -159,25 +151,28 @@
     border: none;
 }
 
-/* エクスポート＋右側ページネーション */
 .admin__actions {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 30px 0 20px;
+    
 }
 
 .admin__export {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 30px;
     padding: 0 18px;
     border: 1px solid #e6ddd2;
     background: #f6f6f6;
     color: #8b7c6d;
     font-size: 12px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-/* ページネーション（理想の < 1 2 3 > に固定） */
 .admin__pager-top {
     display: flex;
     justify-content: flex-end;
@@ -210,7 +205,7 @@
     background: #8b7d6b;
     color: #fff;
     border-color: #8b7d6b;
-    z-index: 1;/* 境界線を前に出す */
+    z-index: 1;
 }
 
 .admin__pager-btn--disabled {
@@ -218,18 +213,15 @@
     cursor: default;
 }
 
-/* くっつけるため：左境界線を消す */
 .admin__pager-page,
 .admin__pager-btn:not(:first-child) {
-    margin-left: -1px; /* ←ここが重要 */
+    margin-left: -1px;
 }
 
-/* 角丸：左右端だけ */
 .admin__pager-btn:first-child {
     border-radius: 4px 0 0 4px;
 }
 
-/* テーブル */
 .admin__table-wrap {
     border: 1px solid #e6ddd2;
     background: #fff;
@@ -240,7 +232,6 @@
     border-collapse: collapse;
 }
 
-/* 行にカーソルが乗ったら（行全体） */
 .admin__table tbody tr:hover td {
     background: #f7f3ee;
 }
@@ -273,7 +264,6 @@
     text-align: center;
 }
 
-/* 詳細ボタン */
 .admin__detail {
     display: inline-block;
     padding: 6px 14px;
@@ -301,7 +291,6 @@
     z-index: 0;
 }
 
-/* × */
 .modal__close-wrap {
     position: absolute;
     top: 18px;
@@ -327,7 +316,6 @@
     justify-content: center;
 }
 
-/* 内容 */
 .modal__list {
     display: grid;
     gap: 18px;
@@ -336,7 +324,6 @@
 .modal__row {
     display: grid;
     grid-template-columns: 160px 1fr;
-    /* 左ラベル・右値 */
     gap: 10px;
     align-items: start;
 }
@@ -355,10 +342,8 @@
 .modal__detail {
     line-height: 1.8;
     white-space: pre-wrap;
-    /* 改行を保つ */
 }
 
-/* 白いパネル */
 .modal__panel {
     position: relative;
     padding: 60px 70px 90px;
@@ -387,7 +372,6 @@
     padding: 8px 26px;
     border: none;
     background: #b53a1a;
-    /* 画像の赤寄り */
     color: #fff;
     cursor: pointer;
     font-size: 13px;
@@ -397,12 +381,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* 上基準にする */
     padding: 60px 24px 24px;
-    /* 上だけ増やす＝下に下げる */
     overflow: visible;
     background: transparent;
- border: none;
+    border: none;
 }
 
 .modal:focus {

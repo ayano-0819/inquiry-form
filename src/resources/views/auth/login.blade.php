@@ -6,8 +6,7 @@
 
 @section('content')
 
-{{-- 右上の register ボタン（この画面だけ） --}}
-<a href="/register" class="login-switch">register</a>
+<a href="/register" class="login__register-btn">register</a>
 
 <div class="login">
     <h2 class="login__title">Login</h2>
@@ -29,6 +28,7 @@
                 @error('email')
                 <div class="login-form__error">{{ $message }}</div>
                 @enderror
+
             </div>
 
             <div class="login__group">
@@ -43,11 +43,13 @@
                 @error('password')
                 <div class="login-form__error">{{ $message }}</div>
                 @enderror
+
             </div>
 
             <button type="submit" class="login__button">
                 ログイン
             </button>
+
         </form>
     </div>
 </div>

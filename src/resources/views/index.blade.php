@@ -13,11 +13,11 @@
         <h1 class="contact-form__title">Contact</h1>
 
         <div class="contact-form__inner">
-    <!-- フォーム -->
+    {{-- フォーム --}}
             <form class="contact-form" action="/confirm" method="post">
                 @csrf
 
-    <!-- お名前 -->
+    {{-- お名前 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                         お名前 <span class="contact-form__required">※</span>
@@ -41,7 +41,7 @@
                         </div> 
                     </div>
                 </div>
-    <!-- 性別 -->
+    {{-- 性別 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                         性別 <span class="contact-form__required">※</span>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-    <!-- メールアドレス -->
+    {{-- メールアドレス --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                         メールアドレス <span class="contact-form__required">※</span>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-    <!-- 電話番号 -->
+    {{-- 電話番号 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                         電話番号 <span class="contact-form__required">※</span>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-    <!-- 住所 -->
+    {{-- 住所 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                         住所 <span class="contact-form__required">※</span>
@@ -119,7 +119,7 @@
                     </div>
                 </div>
 
-    <!-- 建物名 -->
+    {{-- 建物 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">建物名</label>
 
@@ -128,7 +128,7 @@
                     </div>   
                 </div>
 
-    <!-- お問い合わせの種類 -->
+    {{-- お問い合わせの種類 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                     お問い合わせの種類 <span class="contact-form__required">※</span>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
 
-    <!-- お問い合わせ内容 -->
+    {{-- お問い合わせ内容 --}}
                 <div class="contact-form__group">
                     <label class="contact-form__label">
                         お問い合わせ内容 <span class="contact-form__required">※</span>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
 
-    <!-- ボタン -->
+    {{-- ボタン --}}
                 <div class="contact-form__button">
                     <button type="submit">確認画面</button>
                 </div>

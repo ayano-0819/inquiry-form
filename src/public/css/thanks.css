@@ -1,7 +1,3 @@
-/* =========================
-    Thanks 全体
-========================= */
-
 .thanks {
     position: relative;
     min-height: 100vh;
@@ -17,10 +13,6 @@
     text-align: center;
 }
 
-
-/* =========================
-    背景の Thank you
-========================= */
 .thanks__bg-text {
     margin: 0;
     line-height: 1;
@@ -37,9 +29,6 @@
     pointer-events: none;
 }
 
-/* =========================
-    メッセージ
-========================= */
 .thanks__message {
     position: relative;
     font-size: 30px;
@@ -49,10 +38,8 @@
     z-index: 1;
 }
 
-/* =========================
-    HOMEボタン
-========================= */
 .thanks__button {
+    font-family: "Tinos", serif;
     position: relative;
     display: inline-block;
     padding: 10px 32px;

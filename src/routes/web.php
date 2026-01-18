@@ -23,6 +23,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
     Route::get('/search', [AdminController::class, 'index'])->name('admin.search');
     Route::get('/reset',  [AdminController::class, 'reset'])->name('admin.reset');
-    Route::delete('/admin/contacts/{contact}', [AdminController::class, 'destroy'])
-    ->name('admin.contacts.destroy');
+    Route::delete('/delete/{contact}', [AdminController::class, 'destroy'])
+    ->name('contact.delete');
+    Route::get('/export', [AdminController::class, 'export'])
+        ->name('admin.export');
 });

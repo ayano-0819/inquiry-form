@@ -27,6 +27,7 @@
                 @error('name')
                 <div class="register-form__error">{{ $message }}</div>
                 @enderror
+
             </div>
 
             <div class="register__group">
@@ -42,6 +43,7 @@
                 @error('email')
                 <div class="register-form__error">{{ $message }}</div>
                 @enderror
+
             </div>
 
             <div class="register__group">
@@ -56,11 +58,13 @@
                 @error('password')
                 <div class="register-form__error">{{ $message }}</div>
                 @enderror
+
             </div>
     
             <button type="submit" class="register__button">
                 登録
             </button>
+            
         </form>
     </div>
 </div>
