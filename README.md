@@ -6,7 +6,7 @@ Inquiry-Form
 ### 1. リポジトリをクローン
 
 ```
-git clone git@github.com:ayano-0819/todo.git
+git clone git@git@github.com:ayano-0819/inquiry-form.git
 ```
 ### 2. プロジェクトに移動
 
