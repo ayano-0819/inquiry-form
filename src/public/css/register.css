@@ -1,0 +1,114 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #f4efe9;
+    margin: 0;
+}
+
+.register {
+    text-align: center;
+    position: relative;
+}
+
+/* 右上 login ボタン（この画面だけ表示） */
+.register__login-btn {
+    position: fixed;
+        top: 28px;
+        right: 50px;
+    
+        padding: 4px 30px;
+        font-size: 14px;
+        font-family: "Tinos", serif;
+    
+        color: #c2b5a6;
+        background: #f7f3ee;
+        border: 1px solid #e6ddd2;
+        border-radius: 2px;
+    
+        text-decoration: none;
+        line-height: 1.6;
+}
+
+.register__login-btn:hover {
+    opacity: 0.8;
+}
+
+/* Register タイトル */
+.register__title {
+    font-family: "Tinos", serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #8b7c6d;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* カード */
+.register__card {
+    width: 520px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 40px;
+}
+
+/* フォーム */
+.register__form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 350px;
+        /* ← 中身の横幅を制限 */
+    margin: 0 auto;
+        /* ← カード内で中央寄せ */
+}
+
+/* 入力グループ */
+.register__group {
+    text-align: left;
+}
+
+/* ラベル */
+.register__label {
+    display: block;
+    font-size: 14px;
+    color: #8b7d6b;
+    margin-bottom: 8px;
+}
+
+/* 入力欄 */
+.register__input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #f6f6f6;
+    font-size: 14px;
+}
+
+/* placeholder */
+.register__input::placeholder {
+    color: #bbb;
+}
+
+/* ボタン */
+.register__button {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 8px 40px;
+    background-color: #8b7d6b;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register-form__error {
+    color: red;
+    font-size: 12px;
+    margin-top: 6px;
+}

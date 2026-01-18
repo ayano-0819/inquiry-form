@@ -19,4 +19,9 @@ class Contact extends Model
     'categry_id',
     'detail',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'categry_id');
+    }
 }
