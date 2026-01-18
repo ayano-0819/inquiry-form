@@ -86,4 +86,4 @@ http://localhost:8080
 ```
 
 ## ER図
-![ER図](docs/ER図.png)
+![ER図](docs/er-diagram.png)
